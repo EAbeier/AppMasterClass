@@ -1,4 +1,6 @@
 import 'package:atividades_masterclass/Enums/enum_app_tab.dart';
+import 'package:atividades_masterclass/Enums/enum_icons.dart';
+import 'package:atividades_masterclass/Enums/enum_logos.dart';
 import 'package:atividades_masterclass/store/tab_store.dart';
 import 'package:atividades_masterclass/store/theme_store.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +27,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ? IconButton(
                     onPressed: Navigator.of(context).pop,
                     icon: const Icon(Icons.arrow_back_ios))
-                : Image.asset('assets/images/logo/logo.png'),
+                : Image.asset(EnumLogos.logo.uri),
             const SizedBox(width: 4),
             Expanded(
               child: Column(
@@ -49,7 +51,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               onTap: _themeStore.toggleTheme,
               child: _themeStore.isDark
                   ? SvgPicture.asset(
-                      'assets/images/icons/awesome-moon.svg',
+                      EnumIcons.moon.uri,
                       color: Theme.of(context).iconTheme.color,
                     )
                   : Icon(

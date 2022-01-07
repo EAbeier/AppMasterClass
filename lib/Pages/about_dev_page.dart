@@ -1,3 +1,4 @@
+import 'package:atividades_masterclass/Enums/enum_icons.dart';
 import 'package:atividades_masterclass/utils/tecnology_card_content.dart';
 import 'package:atividades_masterclass/widgets/about_dev_card.dart';
 import 'package:atividades_masterclass/widgets/dev_competences_card.dart';
@@ -8,23 +9,23 @@ class AboutDev extends StatelessWidget {
   AboutDev({Key? key}) : super(key: key);
   final List<TecnologyCardContent> contents = [
     TecnologyCardContent(
-      iconUri: 'assets/images/icons/dart.svg',
+      iconUri: EnumIcons.dart.uri,
       tecnologyName: "Dart",
     ),
     TecnologyCardContent(
-      iconUri: 'assets/images/icons/flutter.svg',
+      iconUri: EnumIcons.flutter.uri,
       tecnologyName: "Flutter",
     ),
     TecnologyCardContent(
-      iconUri: 'assets/images/icons/csharp.svg',
+      iconUri: EnumIcons.csharp.uri,
       tecnologyName: "C#",
     ),
     TecnologyCardContent(
-      iconUri: 'assets/images/icons/dotnet.svg',
+      iconUri: EnumIcons.dotNet.uri,
       tecnologyName: ".NET",
     ),
     TecnologyCardContent(
-      iconUri: 'assets/images/icons/android.svg',
+      iconUri: EnumIcons.android.uri,
       tecnologyName: "Android",
     ),
   ];

@@ -1,3 +1,4 @@
+import 'package:atividades_masterclass/Enums/enum_icons.dart';
 import 'package:atividades_masterclass/store/tab_store.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -32,7 +33,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
             _Item(
               onTap: () => _onTap(0),
               title: "Atividades",
-              icon: "assets/images/icons/feather-target.svg",
+              icon: EnumIcons.target.uri,
               value: EnumAppTab.home,
             ),
             Container(
@@ -43,7 +44,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
             _Item(
               onTap: () => _onTap(1),
               title: "Repositório",
-              icon: "assets/images/icons/awesome-github.svg",
+              icon: EnumIcons.github.uri,
               value: EnumAppTab.repository,
             ),
             Container(

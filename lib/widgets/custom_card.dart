@@ -1,3 +1,4 @@
+import 'package:atividades_masterclass/Enums/enum_icons.dart';
 import 'package:atividades_masterclass/routes/routes.dart';
 import 'package:atividades_masterclass/utils/card_content.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +68,7 @@ class CustomCard extends StatelessWidget {
                   height: 20,
                   width: 20,
                   child: SvgPicture.asset(
-                    'assets/images/icons/awesome-github.svg',
+                    EnumIcons.github.uri,
                     color: Theme.of(context).iconTheme.color,
                   ),
                 ),

@@ -1,3 +1,4 @@
+import 'package:atividades_masterclass/Enums/enum_icons.dart';
 import 'package:atividades_masterclass/widgets/botoes.dart';
 import 'package:atividades_masterclass/widgets/custom_appbar.dart';
 import 'package:atividades_masterclass/widgets/termos.dart';
@@ -28,7 +29,7 @@ class MockupTinder extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Image.asset(
-                  'assets/images/icons/tinder.png',
+                  EnumIcons.tinder.uri,
                   height: 100,
                   width: 110,
                 ),

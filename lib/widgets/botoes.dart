@@ -1,3 +1,4 @@
+import 'package:atividades_masterclass/Enums/enum_icons.dart';
 import 'package:flutter/material.dart';
 
 class Botoes extends StatelessWidget {
@@ -20,7 +21,7 @@ class Botoes extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 20, right: 90),
                   child: Image.asset(
-                    'assets/images/icons/apple.png',
+                    EnumIcons.apple.uri,
                     height: 15,
                     width: 15,
                   ),
@@ -56,7 +57,7 @@ class Botoes extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 20, right: 80),
                   child: Image.asset(
-                    'assets/images/icons/facebook.png',
+                    EnumIcons.facebookPng.uri,
                     height: 15,
                     width: 15,
                   ),
@@ -92,7 +93,7 @@ class Botoes extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 20, right: 70),
                   child: Image.asset(
-                    'assets/images/icons/conversation.png',
+                    EnumIcons.conversation.uri,
                     height: 15,
                     width: 15,
                   ),

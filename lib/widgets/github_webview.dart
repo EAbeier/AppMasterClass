@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class GitHubWebView extends StatefulWidget {
-  GitHubWebView({Key? key}) : super(key: key);
+  const GitHubWebView({Key? key}) : super(key: key);
 
   @override
   _GitHubWebViewState createState() => _GitHubWebViewState();

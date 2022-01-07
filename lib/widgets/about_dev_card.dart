@@ -1,3 +1,4 @@
+import 'package:atividades_masterclass/Enums/enum_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -49,28 +50,28 @@ class AboutDevCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SvgPicture.asset(
-                    'assets/images/icons/ionic-logo-whatsapp.svg',
+                    EnumIcons.whats.uri,
                     color: Theme.of(context).highlightColor,
                   ),
                   const SizedBox(
                     width: 20,
                   ),
                   SvgPicture.asset(
-                    'assets/images/icons/awesome-github-alt.svg',
+                    EnumIcons.gitHubAlt.uri,
                     color: Theme.of(context).highlightColor,
                   ),
                   const SizedBox(
                     width: 20,
                   ),
                   SvgPicture.asset(
-                    'assets/images/icons/awesome-instagram.svg',
+                    EnumIcons.instagram.uri,
                     color: Theme.of(context).highlightColor,
                   ),
                   const SizedBox(
                     width: 20,
                   ),
                   SvgPicture.asset(
-                    'assets/images/icons/awesome-facebook-f.svg',
+                    EnumIcons.facebook.uri,
                     color: Theme.of(context).highlightColor,
                   ),
                 ],

@@ -1,3 +1,4 @@
+import 'package:atividades_masterclass/Enums/enum_icons.dart';
 import 'package:atividades_masterclass/routes/routes.dart';
 import 'package:atividades_masterclass/utils/card_content.dart';
 import 'package:atividades_masterclass/widgets/custom_card.dart';
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
       title: "Animações",
       description:
           "Estudos sobre animações implícitas e controladas, contendo 4 exercícios e 2 estudos",
-      iconUri: "assets/images/icons/awesome-running.svg",
+      iconUri: EnumIcons.running.uri,
       exercisesCount: 4,
       repoUrl: "",
       pageUri: "",
@@ -25,7 +26,7 @@ class HomePage extends StatelessWidget {
       title: "Leitura de Mockup",
       description:
           "Aplicação da técnica de leitura de mockup, contendo 2 exercícios",
-      iconUri: "assets/images/icons/awesome-glasses.svg",
+      iconUri: EnumIcons.glasses.uri,
       exercisesCount: 2,
       repoUrl: "",
       pageUri: "",
@@ -34,7 +35,7 @@ class HomePage extends StatelessWidget {
     CardContent(
       title: "Playground",
       description: "Ambiente destinado a testes e estudos em geral",
-      iconUri: "assets/images/icons/material-toys.svg",
+      iconUri: EnumIcons.toys.uri,
       exercisesCount: 3,
       repoUrl: "",
       pageUri: "",
