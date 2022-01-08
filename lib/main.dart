@@ -1,4 +1,3 @@
-import 'package:atividades_masterclass/Enums/enum_theme.dart';
 import 'package:atividades_masterclass/Pages/animations/animations/animated_container.dart';
 import 'package:atividades_masterclass/Pages/animations/animations/expansion_tile_main_page.dart';
 import 'package:atividades_masterclass/Pages/animations/controlled_animations/controlled_anim_container_page.dart';
@@ -8,9 +7,11 @@ import 'package:atividades_masterclass/Pages/index_page.dart';
 import 'package:atividades_masterclass/Pages/mockups/atividade1/mockup_app_financeiro_page.dart';
 import 'package:atividades_masterclass/Pages/mockups/atividade2/mockup_tinder_page.dart';
 import 'package:atividades_masterclass/Pages/splash_Screen.dart';
+import 'package:atividades_masterclass/pages/parquinho/imc/imc_page.dart';
 import 'package:atividades_masterclass/routes/routes.dart';
 import 'package:atividades_masterclass/store/tab_store.dart';
 import 'package:atividades_masterclass/store/theme_store.dart';
+import 'package:atividades_masterclass/utils/enums/enum_theme.dart';
 import 'package:atividades_masterclass/utils/themes/darktheme.dart';
 import 'package:atividades_masterclass/utils/themes/lighttheme.dart';
 import 'package:flutter/material.dart';
@@ -48,7 +49,8 @@ class MyApp extends StatelessWidget {
             CONTROLLEDEXPANSIONTILE: (_) =>
                 const ControlledExapansionTileMain(),
             MOCKUPAPPFINANCEIRO: (_) => const MockupAppFinanceiro(),
-            MOCKUPTINDER: (_) => const MockupTinder()
+            MOCKUPTINDER: (_) => const MockupTinder(),
+            IMC: (_) => const CalculadoraImc()
           },
         );
       }),

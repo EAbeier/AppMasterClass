@@ -1,8 +1,8 @@
-import 'package:atividades_masterclass/Enums/enum_app_tab.dart';
-import 'package:atividades_masterclass/Enums/enum_icons.dart';
-import 'package:atividades_masterclass/Enums/enum_logos.dart';
 import 'package:atividades_masterclass/store/tab_store.dart';
 import 'package:atividades_masterclass/store/theme_store.dart';
+import 'package:atividades_masterclass/utils/enums/enum_app_tab.dart';
+import 'package:atividades_masterclass/utils/enums/enum_icons.dart';
+import 'package:atividades_masterclass/utils/enums/enum_logos.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';

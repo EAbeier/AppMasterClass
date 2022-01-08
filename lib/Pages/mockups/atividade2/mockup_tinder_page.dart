@@ -1,4 +1,4 @@
-import 'package:atividades_masterclass/Enums/enum_icons.dart';
+import 'package:atividades_masterclass/utils/enums/enum_icons.dart';
 import 'package:atividades_masterclass/widgets/botoes.dart';
 import 'package:atividades_masterclass/widgets/custom_appbar.dart';
 import 'package:atividades_masterclass/widgets/termos.dart';

@@ -1,6 +1,5 @@
-// ignore_for_file: file_names
-
 import 'package:atividades_masterclass/routes/routes.dart';
+import 'package:atividades_masterclass/utils/enums/enum_logos.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -32,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/images/logo/masterclass_logo.png",
+              EnumLogos.masterLogo.uri,
             ),
           ],
         ),

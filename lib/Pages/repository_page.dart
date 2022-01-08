@@ -6,6 +6,6 @@ class RepositoryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GitHubWebView();
+    return const GitHubWebView();
   }
 }

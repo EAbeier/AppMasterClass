@@ -1,4 +1,4 @@
-import 'package:atividades_masterclass/Enums/enum_icons.dart';
+import 'package:atividades_masterclass/utils/enums/enum_icons.dart';
 import 'package:atividades_masterclass/utils/tecnology_card_content.dart';
 import 'package:atividades_masterclass/widgets/about_dev_card.dart';
 import 'package:atividades_masterclass/widgets/dev_competences_card.dart';

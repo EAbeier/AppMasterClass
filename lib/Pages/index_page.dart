@@ -1,8 +1,8 @@
-import 'package:atividades_masterclass/Enums/enum_app_tab.dart';
 import 'package:atividades_masterclass/Pages/about_dev_page.dart';
 import 'package:atividades_masterclass/Pages/home_page.dart';
 import 'package:atividades_masterclass/Pages/repository_page.dart';
 import 'package:atividades_masterclass/store/tab_store.dart';
+import 'package:atividades_masterclass/utils/enums/enum_app_tab.dart';
 import 'package:atividades_masterclass/widgets/custom_appbar.dart';
 import 'package:atividades_masterclass/widgets/custom_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +16,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final List<String> titles = ["Atividades", "Repositorio", "Sobre o dev"];
   final PageController controller = PageController();
 
   @override

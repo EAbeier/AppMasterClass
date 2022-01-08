@@ -1,6 +1,6 @@
-import 'package:atividades_masterclass/Enums/enum_icons.dart';
 import 'package:atividades_masterclass/routes/routes.dart';
 import 'package:atividades_masterclass/utils/card_content.dart';
+import 'package:atividades_masterclass/utils/enums/enum_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
