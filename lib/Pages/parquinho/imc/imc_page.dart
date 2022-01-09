@@ -1,7 +1,6 @@
-import 'package:atividades_masterclass/models/pessoa_model.dart';
+import 'package:atividades_masterclass/models/imc_viemodel.dart';
 import 'package:atividades_masterclass/widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 
 class CalculadoraImc extends StatefulWidget {
   const CalculadoraImc({Key? key}) : super(key: key);
@@ -11,9 +10,8 @@ class CalculadoraImc extends StatefulWidget {
 }
 
 class _CalculadoraImcState extends State<CalculadoraImc> {
-  var pessoa = PessoaModel();
-  var _resultado = "";
-  var _imc = 0.0;
+  final imcViewModel = ImcViewModel();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,9 +24,7 @@ class _CalculadoraImcState extends State<CalculadoraImc> {
         child: Column(
           children: [
             TextField(
-              onChanged: (value) {
-                pessoa.peso = double.tryParse(value) ?? 0.0;
-              },
+              onChanged: imcViewModel.definirPeso,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: "Peso",
@@ -38,9 +34,7 @@ class _CalculadoraImcState extends State<CalculadoraImc> {
               height: 12,
             ),
             TextField(
-              onChanged: (value) {
-                pessoa.altura = double.tryParse(value) ?? 0.0;
-              },
+              onChanged: imcViewModel.definirAltura,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: "Altura",
@@ -50,24 +44,18 @@ class _CalculadoraImcState extends State<CalculadoraImc> {
               height: 12,
             ),
             ElevatedButton(
-              onPressed: () {
-                var _imc = pessoa.calcularPeso();
-                if (_imc < 18) {
-                  _resultado = "Abaixo do peso: ${_imc.toStringAsFixed(2)}";
-                } else if (_imc < 24) {
-                  _resultado = "Peso normal: ${_imc.toStringAsFixed(2)}";
-                } else if (_imc >= 24) {
-                  _resultado = "Acima do peso: ${_imc.toStringAsFixed(2)}";
-                }
-
-                setState(() {});
-              },
+              onPressed: imcViewModel.calcularImc,
               child: const Text("Calcular IMC"),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Text(_resultado),
+            AnimatedBuilder(
+              animation: imcViewModel,
+              builder: (contex, child) {
+                return (Text("Resultado: ${imcViewModel.resultado}"));
+              },
+            ),
           ],
         ),
       ),

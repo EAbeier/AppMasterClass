@@ -1,19 +1,6 @@
-import 'dart:math' as math;
-
 class PessoaModel {
-  double _peso = 0.0;
-  double _altura = 0.0;
+  final double peso;
+  final double altura;
 
-  set peso(double value) {
-    _peso = value;
-  }
-
-  set altura(double value) {
-    _altura = value;
-  }
-
-  double calcularPeso() {
-    final imc = _peso / math.pow(_altura, 2);
-    return imc;
-  }
+  const PessoaModel({this.peso = 0.0, this.altura = 0.0});
 }
